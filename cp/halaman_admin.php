@@ -21,7 +21,7 @@
 	}
 
 	?>
-	<h2>Redirect_to_<?php echo $_SESSION['username']; ?>_server</h2>
+	<h2>Wait, Redirect...</h2>
 <hr>
 
 	<p>Halo <b><?php echo $_SESSION['username']; ?></b> Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>

@@ -16,13 +16,13 @@ $path_icon_title                 = "favicon.ico";        //Path Icon in <title> 
 $name_owner                      = "Fadhil Riyanto";    //your name
 
 //========================================= alert ==========================================
-$msg_alert_dashboard_alert       = "Selamat datang ".@$_SESSION['username']." di ".$machine_name." Selamat menikmati";
+$msg_alert_dashboard_alert       = "Selamat datang <b>".@$_SESSION['username']."</b> di ".$machine_name.", Selamat menikmati";
 
 //============================================= NAV1 =======================================
 $text_menu_title1                = "Server";
 $text_menu_title1_sub            = '
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Components</a>
+                            aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Componen</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Buttons</a></li>
                             <li><i class="fa fa-id-badge"></i><a href="ui-badges.html">Badges</a></li>

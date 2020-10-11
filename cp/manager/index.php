@@ -1,6 +1,5 @@
 <?php
-include("/laragon/www/admin/conf.php");
-include("/laragon/www/admin/core.php");
+include("___init___.php");
 ?>
 
 
@@ -233,11 +232,11 @@ include("/laragon/www/admin/core.php");
         <div class="col-md-6 col-lg-3">
             <div class="card bg-flat-color-1 text-light">
                 <div class="card-body">
-                    <div class="h4 m-0">89.9%</div>
-                    <div>Lorem ipsum...</div>
+                    <div class="h4 m-0"><?php echo $used_memory;?></div>
+                    <div>Memory</div>
                     <div class="progress-bar bg-light mt-2 mb-2" role="progressbar" style="width: 20%; height: 5px;"
                         aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                    <small class="text-light">Lorem ipsum dolor sit amet enim.</small>
+                    <small class="text-light">View the used memory of server.</small>
                 </div>
             </div>
         </div>
@@ -246,11 +245,11 @@ include("/laragon/www/admin/core.php");
         <div class="col-md-6 col-lg-3">
             <div class="card bg-flat-color-3 text-light">
                 <div class="card-body">
-                    <div class="h4 m-0">12.124</div>
-                    <div>Lorem ipsum...</div>
+                    <div class="h4 m-0"><?php echo $get_hostname;?></div>
+                    <div>Hostname</div>
                     <div class="progress-bar bg-light mt-2 mb-2" role="progressbar" style="width: 20%; height: 5px;"
                         aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                    <small class="text-light">Lorem ipsum dolor sit amet enim.</small>
+                    <small class="text-light">View hostname in server.</small>
                 </div>
             </div>
         </div>
@@ -259,11 +258,11 @@ include("/laragon/www/admin/core.php");
         <div class="col-md-6 col-lg-3">
             <div class="card bg-flat-color-4 text-light">
                 <div class="card-body">
-                    <div class="h4 m-0">$98.111,00</div>
-                    <div>Lorem ipsum...</div>
+                    <div class="h4 m-0"><?php echo get_cpu_usage();?>%</div>
+                    <div>CPU</div>
                     <div class="progress-bar bg-light mt-2 mb-2" role="progressbar" style="width: 20%; height: 5px;"
                         aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                    <small class="text-light">Lorem ipsum dolor sit amet enim.</small>
+                    <small class="text-light">Info CPU usage on server.</small>
                 </div>
             </div>
         </div>

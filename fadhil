@@ -12,7 +12,7 @@ print ("
 Fadhil Riyanto COMMAND line
 
 Type php fadhil -help for see list help in command
-=====================(c) Fadhil Riyanto==========================".PHP_EOL);
+=====================(c) Fadhil Riyanto ==========================".PHP_EOL);
 switch ($argv[1]) {
   case 'serve':
     echo "mengeksekusi server".PHP_EOL;
