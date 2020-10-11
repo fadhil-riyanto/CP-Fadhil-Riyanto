@@ -1,4 +1,5 @@
 <?php
+session_start();
 //=============================== MYSQL FUNCTIONS ==========================================
 $db_mysqli_server                = "localhost";         //your mysql server (Please change)
 $db_mysqli_database              = "admin";             //your mysql database name (Please change)
@@ -9,13 +10,13 @@ $db_mysqli_password              = "root";              //your mysql password (P
 $machine_author                  = "Fadhil Riyanto";    //author name
 $machine_year_development        = "2015-2020";         //development year
 $machine_name                    = "Fadhil Riyanto CP"; //machine name
-$path_icon_title                 = "";                  //Path Icon in <title> html tag
+$path_icon_title                 = "favicon.ico";        //Path Icon in <title> html tag
 
 //======================================== owner ===========================================
 $name_owner                      = "Fadhil Riyanto";    //your name
 
 //========================================= alert ==========================================
-$msg_alert_dashboard_alert       = "Selamat datang $name_owner, di $machine_name, Selamat menikmati";
+$msg_alert_dashboard_alert       = "Selamat datang ".@$_SESSION['username']." di ".$machine_name." Selamat menikmati";
 
 //============================================= NAV1 =======================================
 $text_menu_title1                = "Server";
@@ -95,4 +96,16 @@ $text_menu_title3_sub           = '<a href="#" class="dropdown-toggle" data-togg
                             <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Forget Pass</a>
                             </li>
                         </ul>';
+
+$user_menu_dropdown_menu         = '<div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-user"></i> Notiffggfications <span
+                                    class="count">13</span></a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
+
+                            <a class="nav-link" href="/admin/cp/logout.php"><i class="fa fa-power-off"></i> Logout</a>
+                        </div>';
+
 ?>

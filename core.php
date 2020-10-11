@@ -1,5 +1,12 @@
 <?php
 //============================== SYSTEM (Don't change it) ==================================
+//==================== SESSION'S ========================
+
+@session_start();
+if($_SESSION['level']==""){
+	header("location:/admin/cp/");
+}
+
 //=================== Hostname ==========================
 $get_hostname = gethostname();
 
