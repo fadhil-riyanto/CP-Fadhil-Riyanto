@@ -1,0 +1,29 @@
+<?php
+print ("
+  ______        _ _     _ _   _____  _                   _        
+ |  ____|      | | |   (_) | |  __ \(_)                 | |       
+ | |__ __ _  __| | |__  _| | | |__) |_ _   _  __ _ _ __ | |_ ___  
+ |  __/ _` |/ _` | '_ \| | | |  _  /| | | | |/ _` | '_ \| __/ _ \ 
+ | | | (_| | (_| | | | | | | | | \ \| | |_| | (_| | | | | || (_) |
+ |_|  \__,_|\__,_|_| |_|_|_| |_|  \_\_|\__, |\__,_|_| |_|\__\___/ 
+                                        __/ |                     
+                                       |___/                      
+=================================================================
+Fadhil Riyanto COMMAND line
+
+Type php fadhil -help for see list help in command
+=====================(c) Fadhil Riyanto==========================".PHP_EOL);
+switch ($argv[1]) {
+  case 'serve':
+    echo "mengeksekusi server".PHP_EOL;
+    echo "----------------------".PHP_EOL;
+    echo "port terbuka  : 8082".PHP_EOL;
+    echo "akses         : http://127.0.0.1:8082".PHP_EOL;
+    exec("php -S localhost:8082 index.php");
+    break;
+  
+  default:
+    echo "ga nemu";
+    break;
+}
+?>
