@@ -1,3 +1,0 @@
-
-                    window.__ngModules = {"core": ["core", "core.templates"], "passwd": ["ajenti.passwd"], "ace": ["ajenti.ace"], "plugins": ["ajenti.plugins"], "dashboard": ["ajenti.dashboard"], "filesystem": ["ajenti.filesystem"], "services": ["ajenti.services"], "terminal": ["ajenti.terminal"], "filemanager": ["ajenti.filemanager"], "packages": ["ajenti.packages"], "notepad": ["ajenti.notepad"], "settings": ["ajenti.settings"]};
-                
