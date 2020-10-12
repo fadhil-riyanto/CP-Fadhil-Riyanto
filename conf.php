@@ -10,7 +10,7 @@ $db_mysqli_password              = "root";              //your mysql password (P
 $machine_author                  = "Fadhil Riyanto";    //author name
 $machine_year_development        = "2015-2020";         //development year
 $machine_name                    = "Fadhil Riyanto CP"; //machine name
-$path_icon_title                 = "favicon.ico";        //Path Icon in <title> html tag
+$path_icon_title                 = "/admin/favicon.png";        //Path Icon in <title> html tag
 
 //======================================== owner ===========================================
 $name_owner                      = "Fadhil Riyanto";    //your name
@@ -86,7 +86,7 @@ $text_menu_title2_sub_sub_sub    = '
                             </li>
                         </ul>';
 
-//============================================= NAV2 =======================================
+//============================================= NAV3 =======================================
 $text_menu_title3               = "APPS";
 $text_menu_title3_sub           = '<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Pages</a>
