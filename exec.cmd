@@ -1,1 +1,0 @@
-php -s index.php localhost:8000

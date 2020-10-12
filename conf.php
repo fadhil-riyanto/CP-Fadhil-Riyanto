@@ -98,14 +98,24 @@ $text_menu_title3_sub           = '<a href="#" class="dropdown-toggle" data-togg
                         </ul>';
 
 $user_menu_dropdown_menu         = '<div class="user-menu dropdown-menu">
-                            <a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
-
-                            <a class="nav-link" href="#"><i class="fa fa-user"></i> Notiffggfications <span
-                                    class="count">13</span></a>
-
-                            <a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
-
+                            
                             <a class="nav-link" href="/admin/cp/logout.php"><i class="fa fa-power-off"></i> Logout</a>
                         </div>';
+
+function script_copyright(){
+    echo '
+    <!-- *******************************************************
+    Copyright (C) 2015 Fadhil Riyanto 
+    email: id.fadhil.riyanto@gmail.com
+    
+    This file is part of CP Fadhil Riyanto.
+    
+    CP Fadhil Riyanto can not be copied and/or distributed without the express
+    permission of Fadhil Riyanto
+    ******************************************************* -->
+    ';
+}
+
+
 
 ?>

@@ -19,7 +19,7 @@ switch ($argv[1]) {
     echo "----------------------".PHP_EOL;
     echo "port terbuka  : 8082".PHP_EOL;
     echo "akses         : http://127.0.0.1:8082".PHP_EOL;
-    exec("php -S localhost:8082 index.php");
+    exec("start_apache.cmd");exec("start_mysql.cmd");
     break;
   
   default:

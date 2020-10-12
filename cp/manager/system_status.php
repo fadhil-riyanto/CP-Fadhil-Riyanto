@@ -211,26 +211,57 @@ include("___init___.php");
 
 
 
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header">
-                        <strong>Badges </strong>
-                        <small>Use this class
-                            <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code> or <code>&lt;input&gt;</code>
-                        </small>
-                    </div>
-                    <div class="card-body">
-                        <button type="button" onclick="window.location.href='https://w3docs.com';"
-                            class="btn btn-primary">Primary</button>
-                        <button type="button" class="btn btn-secondary">Secondary</button>
-                        <button type="button" class="btn btn-success">Success</button>
-                        <button type="button" class="btn btn-danger">Danger</button>
-                        <button type="button" class="btn btn-warning">Warning</button>
-                        <button type="button" class="btn btn-info">Info</button>
-                        <button type="button" class="btn btn-link">Link</button>
-                    </div>
-                </div><!-- /# card -->
+
+            <div class="row"></div>
+        </div>
+       <div class="col-md-6 col-lg-3">
+            <div class="card bg-flat-color-1 text-light">
+                <div class="card-body" href="wkwk.php">
+                    <div class="h4 m-0"><?php echo $used_memory;?></div>
+                    <div>Memory</div>
+                    <div class="progress-bar bg-light mt-2 mb-2" role="progressbar" style="width: 20%; height: 5px;"
+                        aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                    <small class="text-light">View the used memory of server.</small>
+                </div>
             </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="card bg-flat-color-3 text-light">
+                <div class="card-body">
+                    <div class="h4 m-0"><?php echo $get_hostname;?></div>
+                    <div>Hostname</div>
+                    <div class="progress-bar bg-light mt-2 mb-2" role="progressbar" style="width: 20%; height: 5px;"
+                        aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                    <small class="text-light">View hostname in server.</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="card bg-flat-color-4 text-light">
+                <div class="card-body">
+                    <div class="h4 m-0"><?php echo get_cpu_usage();?>%</div>
+                    <div>CPU</div>
+                    <div class="progress-bar bg-light mt-2 mb-2" role="progressbar" style="width: 20%; height: 5px;"
+                        aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                    <small class="text-light">Info CPU usage on server.</small>
+                </div>
+            </div>
+        </div>
+       <div class="col-md-6 col-lg-3">
+            <div class="card bg-flat-color-2 text-light">
+                <div class="card-body">
+                    <div class="h4 m-0">$98.111,00</div>
+                    <div>Lorem ipsum...</div>
+                    <div class="progress-bar bg-light mt-2 mb-2" role="progressbar" style="width: 20%; height: 5px;"
+                        aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                    <small class="text-light">Lorem ipsum dolor sit amet enim.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
 
 
